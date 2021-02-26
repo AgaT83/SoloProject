@@ -5,9 +5,218 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solo project</title>
-    <style rel="stylesheet" href="vendor/bootstrap-gid.min.css"></style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap-gid.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="leftbar">
+        <h1>Just do it</h1>
+        <nav class="sidebar">
+            <ul class="links">
+                <li class="link">
+                    <i class="far fa-star"></i>
+                    <a href="#general">General</a>
+                </li>
+                <li class="link">
+                    <i class="far fa-file-alt"></i>
+                    <a href="#">Details</a>
+                </li>
+                <li class="link">
+                    <i class="fas fa-link"></i>
+                    <a href="#links">Links</a>
+                </li>
+                <li class="link">
+                    <i class="fas fa-th-large"></i>
+                    <a href="#">Banners</a>
+                </li>
+                <li class="link">
+                    <i class="far fa-user"></i>
+                    <a href="#">Personal data</a>
+                </li>
+                <li class="link">
+                    <i class="fas fa-dollar-sign"></i>
+                    <a href="#">Payout</a>
+                </li>
+                <li class="link">
+                    <i class="fas fa-reply"></i>
+                    <a href="#">Postback</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="manager">
+            <h2>Your manager</h2>
+            <div class="manager-data">
+                <div class="manager-photo"><a href="#"><img src="images/young-men-3771712_960_720.jpg" alt="photo"></a></div>
+                <p>Mikhael P.</p>
+            </div>
+        </div>
+    </div>
+    <div class="rightbar">
+      <div class="topbar">
+        <ul class="nav-up">
+          <li class="item">
+              <i class="fas fa-wallet"></i>
+              <p>$1,500.00</p>
+              <a href=""><i class="fas fa-chevron-down"></i></a>
+          </li>
+          <li class="item">
+              <a href=""><i class="far fa-bell"></i></a>
+          </li>
+          <li class="item">
+              <a href=""><i class="far fa-user-circle"></i></a>
+              <p>Leonardo Dicaprio</p>
+          </li>
+          <li class="item">
+              <a href=""><i class="fas fa-sign-out-alt"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div id="general" class="section">
+        <div class="title">
+          <h3>General statistic</h3>
+        </div>
+        <div class="calendar">
+            <form class="form">
+              <input  type="date">
+              <input  type="date">
+              <div class="btn"><a href="#"><i class="fas fa-redo"></i></a></div>
+            </form>
+        </div>
+        <div class="statistic">
+            <div class="table-wrapper">
+              <div class="column">
+                <div class="row">
+                  <h4>Visit Signups</h4>
+                  <p class="number">124</p>
+                </div>
+                <div class="row">
+                  <h4>FTD</h4>
+                  <p class="number">445</p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="row">
+                  <h4>Net Deposit</h4>
+                  <p class="number">564</p>
+                </div>
+                <div class="row">
+                  <h4>Turn Over</h4>
+                  <p class="number">432</p>
+                </div>
+              </div>
+            </div>
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                <h4>Earnings chart</h4>
+              </div>
+              <div class="chart">
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div id="links" class="section">
+        <div class="title">
+          <h3>Links</h3>
+        </div>
+        <div class="links-wrapper">
+          <div class="btn-add">
+            <a href="#">+ add new</a>
+          </div>
+          <div class="links-list">
+            <ul class="links-column">
+              <li class="single">
+                <h4>Home page</h4>
+                <a href="#">http://www.homepage.com</a>
+                <div class="icons-list">
+                  <i class="fas fa-link"></i>
+                  <i class="far fa-trash-alt"></i>
+                </div>
+              </li>
+              <li class="single">
+                <h4>Currently offer</h4>
+                <a href="#">http://www.currently.com</a>
+                <div class="icons-list">
+                  <i class="fas fa-link"></i>
+                  <i class="far fa-trash-alt"></i>
+                </div>
+              </li>
+              <li class="single">
+                <h4>Blurpix</h4>
+                <a href="#">http://www.blurpix.com</a>
+                <div class="icons-list">
+                  <i class="fas fa-link"></i>
+                  <i class="far fa-trash-alt"></i>
+                </div>
+              </li>
+              <li class="single">
+                <h4>Your site</h4>
+                <a href="#">http://www.yoursite.com</a>
+                <div class="icons-list">
+                  <i class="fas fa-link"></i>
+                  <i class="far fa-trash-alt"></i>
+                </div>
+              </li>
+              <li class="single">
+                <h4>Google</h4>
+                <a href="#">http://www.google.com</a>
+                <div class="icons-list">
+                  <i class="fas fa-link"></i>
+                  <i class="far fa-trash-alt"></i>
+                </div>
+              </li>
+              <li class="single">
+                <h4>Facebook</h4>
+                <a href="#">http://www.facebook.com</a>
+                <div class="icons-list">
+                  <i class="fas fa-link"></i>
+                  <i class="far fa-trash-alt"></i>
+                </div>
+              </li>
+              <li class="single">
+                <h4>Dashboard</h4>
+                <a href="#">http://www.dashboard.com</a>
+                <div class="icons-list">
+                  <i class="fas fa-link"></i>
+                  <i class="far fa-trash-alt"></i>
+                </div>
+              </li>
+              <li class="single">
+                <h4>Blurax</h4>
+                <a href="#">http://www.blurax.com</a>
+                <div class="icons-list">
+                  <i class="fas fa-link"></i>
+                  <i class="far fa-trash-alt"></i>
+                </div>
+              </li>
+              <li class="single">
+                <h4>Piece of Wine</h4>
+                <a href="#">http://www.pieceofwine.com</a>
+                <div class="icons-list">
+                  <i class="fas fa-link"></i>
+                  <i class="far fa-trash-alt"></i>
+                </div>
+              </li>
+              <li class="single">
+                <h4>Twitter</h4>
+                <a href="#">http://www.twitter.com</a>
+                <div class="icons-list">
+                  <i class="fas fa-link"></i>
+                  <i class="far fa-trash-alt"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-add">
+            <a href="#">+ add new</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

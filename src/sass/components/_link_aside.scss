@@ -1,0 +1,26 @@
+.links {
+    list-style: none;
+    font-family: $main-font;
+    padding-bottom: 30px;
+    padding-left: 0;
+    color: $font-main-color;
+      
+    .link {
+      padding: 10px 0 10px 20px;
+  
+      &:hover {
+        background-color: $background-two;
+      }
+    }
+    
+    i {
+      width: 20px;
+      font-size: 20px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: $font-main-color;
+      padding-left: 20px;
+    }
+  }

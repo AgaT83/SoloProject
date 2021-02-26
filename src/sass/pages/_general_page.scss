@@ -1,0 +1,65 @@
+.calendar {
+    height: 10px;
+    border-bottom: 1px solid $font-light-color;
+    padding: 50px 0;
+    flex: 2;
+}
+    
+.statistic {
+    flex: 8;
+}
+    
+h3, h4 {
+    font-family: $main-font;
+    color: $font-main-color;
+}
+    
+.form {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+    
+.btn {
+    background-color: $brand-color;
+    height: 30px;
+    width: 30px;
+    border-radius: 10%;
+    padding: 3px;
+    margin-left: 20px;
+    
+    &:hover {
+    background-color: $btn-hover-one;
+    }
+}
+    
+.fa-redo {
+    color: #fff;
+    padding: 4px;
+}
+    
+.table-wrapper {
+    display: flex;
+    padding: 50px 100px;
+    justify-content: space-around;
+}
+    
+.column {
+    width: 300px;
+    margin: 0 50px;
+}
+    
+.row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $font-light-color;
+}
+    
+.number {
+    padding-left: 100px;
+    font-family: $main-font;
+}
+    
+
+    
+

@@ -1,0 +1,12 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-one;
+}
+
+.rightbar {
+  width: 80%;
+  float: right;
+}

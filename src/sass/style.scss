@@ -2,3 +2,18 @@
 @import 'mixins';
 @import 'normalize';
 @import 'layout';
+
+@import 'sections/sidebar';
+@import 'sections/topbar';
+@import 'sections/main_content';
+
+@import 'components/link_aside';
+@import 'components/item_top';
+@import 'components/manager_profile';
+@import 'components/page_title';
+@import 'components/chart';
+@import 'components/button_add';
+@import 'components/link_trash_icon';
+
+@import 'pages/general_page';
+@import 'pages/links_page';

@@ -1,0 +1,39 @@
+.links-column {
+    list-style: none;
+    padding: 0;
+}
+    
+.single {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    border-bottom: 1px solid $font-light-color;
+    margin: 10px 200px;
+
+    &:hover {
+        background-color: $background-one;
+
+        .icons-list {
+        opacity: 1;
+        cursor: pointer;
+        }
+    }
+
+    > h4 {
+        text-align: left;
+        flex: 4;
+        }
+        
+        > a {
+        flex: 4;
+        text-decoration: none;
+        color: $background-three;
+        font-family: $main-font;
+        
+        &:hover{
+            color: $btn-hover-one;
+        }
+    }
+}
+    

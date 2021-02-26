@@ -1,0 +1,21 @@
+.topbar {
+  width: 80%;
+  height: 60px;
+  position: fixed;
+  background-color: $background-light;
+}
+
+.nav-up {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  color: $font-main-color;
+
+  > li {
+    height: 60px;
+    border-left: 1px solid $font-light-color;
+    display: flex;
+  }
+}

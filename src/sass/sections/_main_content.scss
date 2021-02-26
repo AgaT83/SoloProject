@@ -1,0 +1,10 @@
+.section {
+  background-color: $background-light;
+  height: auto;
+  margin: 100px 10px 10px 10px;
+  box-shadow: 0 0 2px 1px $font-light-color;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+  
