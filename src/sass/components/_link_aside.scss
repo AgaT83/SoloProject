@@ -1,26 +1,37 @@
 .links {
-    list-style: none;
-    font-family: $main-font;
-    padding-bottom: 30px;
-    padding-left: 0;
-    color: $font-main-color;
+  list-style: none;
+  font-family: $main-font;
+  padding-bottom: 30px;
+  padding-left: 0;
+  color: $font-main-color;
       
-    .link {
-      padding: 10px 0 10px 20px;
+  .link {
+    padding: 10px 0 10px 20px;
+    position: relative;
   
-      &:hover {
-        background-color: $background-two;
-      }
+    &:hover {
+      background-color: $background-two;
     }
-    
-    i {
-      width: 20px;
-      font-size: 20px;
-    }
-    
-    a {
-      text-decoration: none;
-      color: $font-main-color;
-      padding-left: 20px;
+
+    &:hover::before {
+      position: absolute;
+      content: '';
+      background-color: $btn-hover-one;
+      height: 40px;
+      width: 4px;
+      top: 0;
+      left: 0;
     }
   }
+    
+  i {
+    width: 20px;
+    font-size: 20px;
+  }
+    
+  a {
+    text-decoration: none;
+    color: $font-main-color;
+    padding-left: 20px;
+  }
+}

@@ -1,39 +1,55 @@
 .links-column {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
     
 .single {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 70px;
-    border-bottom: 1px solid $font-light-color;
-    margin: 10px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  border-bottom: 1px solid $font-light-color;
+  margin: 10px 200px;
 
-    &:hover {
-        background-color: $background-one;
+  &:hover {
+    background-color: $background-one;
 
-        .icons-list {
-        opacity: 1;
-        cursor: pointer;
-        }
+    .icons-list {
+      opacity: 1;
+      cursor: pointer;
     }
+  }
 
-    > h4 {
-        text-align: left;
-        flex: 4;
-        }
+  > h4 {
+    text-align: left;
+    flex: 4;
+  }
         
-        > a {
-        flex: 4;
-        text-decoration: none;
-        color: $background-three;
-        font-family: $main-font;
+  > a {
+    flex: 4;
+    text-decoration: none;
+    color: $background-three;
+    font-family: $main-font;
         
-        &:hover{
-            color: $btn-hover-one;
-        }
+    &:hover{
+      color: $btn-hover-one;
     }
+  }
 }
     
+@media (max-width: 990px) {
+  .single { 
+    flex-direction: column;
+    height: 140px;
+    margin: 10px;
+
+    > h4 {
+      white-space: nowrap;
+    }
+
+    .icons-list {
+      width: 50px;
+      padding-left: 0;
+    }
+  }
+}

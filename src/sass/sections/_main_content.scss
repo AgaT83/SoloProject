@@ -7,4 +7,16 @@
   display: flex;
   flex-direction: column;
 }
+
+:target::before {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
   
+@media (max-width: 991px) {
+  .section {
+    margin-top: 10px;
+  }  
+}

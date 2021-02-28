@@ -19,3 +19,10 @@
     display: flex;
   }
 }
+
+@media (max-width: 991px) {
+  .topbar {
+    width: 95%;
+    display: none;
+  }
+}

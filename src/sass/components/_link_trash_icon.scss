@@ -1,12 +1,12 @@
 .icons-list {
-    display: flex;
-    justify-content: space-around;
-    flex: 1;
-    padding-left: 30px;
-    opacity: 0;
-    color: $font-main-color;
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  padding-left: 30px;
+  opacity: 0;
+  color: $font-main-color;
 
-    i:hover {
+  i:hover {
     color: $btn-hover-one;
-    }
+  }
 }

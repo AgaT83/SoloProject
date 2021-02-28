@@ -9,11 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="vendor/bootstrap-gid.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <div class="leftbar">
-        <h1>Just do it</h1>
+        <div class="logo">
+          <h1>Just do it</h1>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
         <nav class="sidebar">
             <ul class="links">
                 <li class="link">
@@ -53,12 +60,31 @@
                 <p>Mikhael P.</p>
             </div>
         </div>
+        <div class="rwd-topbar">
+          <ul class="rwd-nav">
+            <li class="rwd-item">
+                <i class="fas fa-wallet"></i>
+                <p>$1,500.00</p>
+                <a href=""><i class="fas fa-chevron-down"></i></a>
+            </li>
+            <li class="rwd-item">
+                <a href=""><i class="far fa-bell"></i></a>
+            </li>
+            <li class="rwd-item">
+                <a href=""><i class="far fa-user-circle"></i></a>
+                <p>Leonardo Dicaprio</p>
+            </li>
+            <li class="rwd-item">
+                <a href=""><i class="fas fa-sign-out-alt"></i></a>
+            </li>
+          </ul>
+        </div>
     </div>
     <div class="rightbar">
       <div class="topbar">
         <ul class="nav-up">
           <li class="item">
-              <i class="fas fa-wallet"></i>
+              <a href=""><i class="fas fa-wallet"></i></a>
               <p>$1,500.00</p>
               <a href=""><i class="fas fa-chevron-down"></i></a>
           </li>

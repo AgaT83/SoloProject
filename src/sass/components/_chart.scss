@@ -1,22 +1,29 @@
 .chart-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 100px;
 }
     
 .chart-title {
-    display: flex;
-    margin: 0;
-    margin: 0 50px;
+  display: flex;
+  margin: 0;
+  margin: 0 50px;
 }
     
 .chart {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
     
 #myChart {
-    max-width: 800px;
-    height: 500px;
+  width: 800px;
+  height: 500px;
+}
+
+@media (max-width: 575px) {
+  #myChart {
+    max-width: 600px;
+    max-height: 300px;
+  }
 }
