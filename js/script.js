@@ -57,3 +57,33 @@ burger.addEventListener('click', function() {
     burgerMenu.classList.remove('show');
   }
 });
+
+const sectionClickHandler = function(event){
+  event.preventDefault();
+  const clickedElement = this;
+
+  const activeLinks = document.querySelectorAll('.link');
+  for(let activeLink of activeLinks){
+    activeLink.classList.remove('active');
+  }
+
+  clickedElement.classList.add('active');
+
+  const activeArticles = document.querySelectorAll('.section');
+  for(let activeArticle of activeArticles){
+    activeArticle.classList.remove('active');
+  }
+
+  const clickedElementA = clickedElement.querySelector('a');
+  const correctLink = clickedElementA.getAttribute('href');
+
+  const correctArticle = document.querySelector(correctLink);
+
+  correctArticle.classList.add('active');
+};
+
+const links = document.querySelectorAll('.link');
+console.log(links);
+for(let link of links){
+  link.addEventListener('click', sectionClickHandler);
+}
